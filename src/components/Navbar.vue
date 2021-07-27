@@ -1,6 +1,6 @@
 <template>
     
-    <div>
+    <div class="navbar">
         <ul>
             <li>Home</li>
             <li>About</li>
@@ -19,14 +19,18 @@ export default {
 
 <style>
 
-    ul {
+    .navbar {
         background-color: black;
+        height: 100px;
+    }
+
+    ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
+        height: 100px;
         border-radius: 25px;
-        height: 50px;
         padding: 0 20px 0 20px;
     }
 

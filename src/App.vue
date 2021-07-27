@@ -3,6 +3,7 @@
 <div>
   <Navbar />
   <BigImage />
+  <TrialComp />
   <h1>Hello Garrett</h1>
   <h2>Dog Name: {{dog}}</h2>
   <button v-on:click="handleClick">Click Me</button>
@@ -15,6 +16,7 @@
 import HelloWorld from "./components/HelloWorld.vue"
 import Navbar from "./components/Navbar.vue"
 import BigImage from "./components/BigImage.vue"
+import TrialComp from "./components/TrialComp.vue"
 
 export default {
   name: 'App',
@@ -27,7 +29,8 @@ export default {
   components: {
     HelloWorld,
     Navbar,
-    BigImage
+    BigImage,
+    TrialComp
   },
   methods: {
     handleClick: function(){
@@ -40,6 +43,11 @@ export default {
 </script>
 
 <style>
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
 h1 {
   color: blue;
