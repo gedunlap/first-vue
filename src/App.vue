@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Whaddup Dude?!"/>
-  </div>
+
+<div>
+  <Navbar />
+  <h1>Hello Garrett</h1>
+  <h2>Dog Name: {{dog}}</h2>
+  <button v-on:click="handleClick">Click Me</button>
+  <HelloWorld v-bind:otherDog="otherDog" />
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue"
+import Navbar from "./components/Navbar.vue"
 
 export default {
   name: 'App',
+  data: function(){
+    return {
+      dog: "Weeman",
+      otherDog: "Lincoln"
+    }
+  },
   components: {
-    HelloWorld
+    HelloWorld,
+    Navbar
+  },
+  methods: {
+    handleClick: function(){
+      this.dog = "Delilah"
+      this.otherDog = "Mandy"
+    }
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+h1 {
+  color: blue;
 }
+
+h3 {
+  color: teal;
+}
+
 </style>
