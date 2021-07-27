@@ -23,13 +23,16 @@ export default {
         background-color: black;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
-        list-style-type: none;
-        border-radius: 10px;
+        align-items: center;
+        list-style: none;
+        border-radius: 25px;
+        height: 50px;
+        padding: 0 20px 0 20px;
     }
 
     li {
         color: white;
+        font-size: 20px;
     }
 
 </style>

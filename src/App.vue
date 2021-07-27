@@ -2,6 +2,7 @@
 
 <div>
   <Navbar />
+  <BigImage />
   <h1>Hello Garrett</h1>
   <h2>Dog Name: {{dog}}</h2>
   <button v-on:click="handleClick">Click Me</button>
@@ -13,6 +14,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue"
 import Navbar from "./components/Navbar.vue"
+import BigImage from "./components/BigImage.vue"
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
   },
   components: {
     HelloWorld,
-    Navbar
+    Navbar,
+    BigImage
   },
   methods: {
     handleClick: function(){
